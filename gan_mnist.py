@@ -384,9 +384,6 @@ def train_for_n(generator, discriminator, gan, n_train, epochs=100, plt_frq=25, 
             if batch_counter == nb:
                 break
 
-# K.set_value(g_opt.lr, 1e-6)
-# K.set_value(d_opt.lr, 1e-5)
-
 if __name__ == '__main__':
     (X_train, y_train), (X_test, y_test) = load_preprocess_mnist()
     n_train = X_train.shape[0]
